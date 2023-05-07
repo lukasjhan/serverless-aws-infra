@@ -1,0 +1,13 @@
+service: test
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+  region: us-east-1
+
+custom:
+  awsInfraConfig: "/home/unknown/serverless-aws-infra/sls-test/config.js"
+
+plugins:
+  - ../dist/index.js
